@@ -3,57 +3,25 @@
 
 /* set margin, padding. and font for whole page */
 *{
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* set body background to light blue and font to black */
 body {
-    background-color: hsl(180, 100%, 50%);
+    background-color: hsl(0, 0%, 0%);
     color: #000000;
+    width: 100vw;
 }
 
-/* defined class .greem-bg */
-.green-bg {
-    background-color: #4df74a;
+/* limited image size */
+img {
+    width: 200px;
+    height: 200px;
 }
 
-.red-bg {
-    background-color: #ff1212;
-}
-
-.lilac-bg {
-    background-color: #c2a8ff;
-}
-
-.button-bg {
-    background-color: #ffae00;
-}
-
-.title-bg {
-    background-color: #00b386;
-}
-/* defined id #cat */
-#cat {
-    background-color: #e1ff00;
-    color: #000000;
-}
-
-
-
-#animated {
-position: absolute;
-    animation: move 5s ease-in-out infinite;
-}
-
-
-@keyframes move {
-    from {left: 0px;}
-    to {left: 110px;}
-
-}
-
+/* centered body */
 .center {
     display: block;
     margin-left: auto;
@@ -61,6 +29,62 @@ position: absolute;
     width: 50%;
 }
 
-.size-limit {
-    max-width: 200px;
+/* defined class .green-bg */
+.green-bg {
+    background-color: #4df74a;
 }
+
+/* defined class .red-bg */
+.red-bg {
+    background-color: #ff1212;
+}
+
+/* defined class .lilac-bg */
+.lilac-bg {
+    background-color: #c2a8ff;
+}
+
+/* defined class .button-bg */
+.button-bg {
+    background-color: #ffae00;
+}
+
+/* defined class .title-bg */
+.title-bg {
+    background-color: #00b386;
+}
+
+.container {
+    width: 100%;
+    /* allows fluidity of the containers content */
+    display: flex;
+    flex-direction: column;
+    /* centers */
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* defined id #cat */
+#cat {
+    background-color: #e1ff00;
+    color: #000000;
+}
+
+#animated {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+position: absolute;
+    animation: move 2s linear infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes move {
+    from {left: 200px;}
+    to {left: 300px;}
+    
+}
+
