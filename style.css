@@ -1,20 +1,66 @@
+/* css comment test */
+
+
+/* set margin, padding. and font for whole page */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+/* set body background to light blue and font to black */
 body {
     background-color: hsl(180, 100%, 50%);
     color: #000000;
 }
 
+/* defined class .greem-bg */
 .green-bg {
     background-color: #4df74a;
 }
 
+.red-bg {
+    background-color: #ff1212;
+}
+
+.lilac-bg {
+    background-color: #c2a8ff;
+}
+
+.button-bg {
+    background-color: #ffae00;
+}
+
+.title-bg {
+    background-color: #00b386;
+}
+/* defined id #cat */
 #cat {
     background-color: #e1ff00;
     color: #000000;
+}
+
+
+
+#animated {
+position: absolute;
+    animation: move 5s ease-in-out infinite;
+}
+
+
+@keyframes move {
+    from {left: 0px;}
+    to {left: 110px;}
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.size-limit {
+    max-width: 200px;
 }
