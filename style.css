@@ -23,10 +23,13 @@ img {
 
 /* centered body */
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 100%;
+    /* allows fluidity of the containers content */
+    display: flex;
+    flex-direction: column;
+    /* centers */
+    align-items: center;
+    justify-content: center;
 }
 
 /* defined class .green-bg */
@@ -54,14 +57,11 @@ img {
     background-color: #00b386;
 }
 
+#white-text {
+    color: #ffffff;
+}
 .container {
-    width: 100%;
-    /* allows fluidity of the containers content */
-    display: flex;
-    flex-direction: column;
-    /* centers */
-    align-items: center;
-    justify-content: center;
+    
 }
 
 
@@ -83,8 +83,30 @@ position: absolute;
 
 
 @keyframes move {
-    from {left: 200px;}
-    to {left: 300px;}
+    from {left: 200px; top: 720px;}
+    to {left: 300px; top: 720px;}
     
 }
 
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #b3b3b3;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+#space {
+    margin-bottom: 14em;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+
+}
+
+#placeholder {
+    margin-bottom: 5em;
+}
