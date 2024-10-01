@@ -1,3 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
 body {
     background-color: hsl(180, 100%, 50%);
+    color: white;
+}
+
+.green-bg {
+    background-color: #4df74a;
+}
+
+#cat {
+    background-color: #e1ff00;
+    color: #000000;
 }
