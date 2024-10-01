@@ -76,15 +76,15 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-position: absolute;
+position: relative;
     animation: move 2s linear infinite;
     animation-direction: alternate;
 }
 
 
 @keyframes move {
-    from {left: 200px; top: 720px;}
-    to {left: 300px; top: 720px;}
+    from {left: -20vw; top: 0px;}
+    to {left: 50vw; top: 0px;}
     
 }
 
